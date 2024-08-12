@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dictionary API Application</title>
+    <link rel="stylesheet" href="dictionary.css">
+</head>
+<body>
+    <audio id="sound"></audio>
+    <h1 class="header">Dictionary App</h1>
+    <div class="card">
+        <div class="search-box">
+            <input type="text" class="search" placeholder="Type the word here" spellcheck="false">
+            <button class="search-btn">Search</button>
+        </div>
+        <div>
+            <h1 id="err">Information incorrect</h1>
+        </div>
+        <div class="details">
+            <div class="word-audio">
+                <p class="search-word">Lorem</p>
+                <a class="audio" onclick="playSound()"><img src="pics/speaker.png" class="speaker"></a>
+            </div>
+            <div class="line-2">
+                <p class="word-2">adjective /si' ri. n/</p>
+            </div>
+            <div class="line-3">
+                <p class="word-3">Lorem ipsum, dolor sit amet consectetur</p>
+            </div>
+            <div class="line-4">
+                <p class="word-4">Lorem ipsum, dolor sit amet consectetur</p>
+            </div>
+        </div>
+    </div>
+    <script src="dictionary.js"></script>
+</body>
+</html>

@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+body{
+    background-image: url(pics/back.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;  
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    font-family: "JetBrains Mono", monospace;
+}
+.header{
+    text-align: center;
+    margin: 60px 0px 100px 0px;
+    font-size: 50px;
+    font-weight: 900;
+}
+.card{
+    width: 700px;
+    height: 80px;
+    border-radius: 6px;
+    padding: 30px;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    background-color: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 4px 30px rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+}
+.search-box{
+    height: 15%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+}
+.search{
+    width: 400px;
+    font-size: 24px;
+    padding: 10px;
+    background: none;
+    outline: none;
+    border: none;
+    border-bottom: 3px solid rgba(0, 0, 0,0.3);
+    color: rgba(0, 0, 0,0.8);
+    text-transform: capitalize;
+    font-weight: 900;
+}
+.search::placeholder{
+    font-size: 18px;
+    font-weight: 800;
+    color: rgba(0,0,0,0.7);
+}
+.search-btn{
+    width: 200px;
+    font-size: 18px;
+    font-weight: 900;
+    height: 40px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    text-align: center;
+    display: flex;
+    margin-top: 10px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0,0.4);;
+    color: rgba(255, 255, 255,0.7);
+    backdrop-filter: blur(10px);
+}
+.word-audio{
+    display: flex;
+    justify-content: space-between;
+    margin: 80px 20px 0px 20px;
+}
+.search-word{
+    font-size: 40px;
+    font-weight:bolder ;
+    text-decoration: solid;
+}
+.speaker{
+    height: 30px;
+    width: 30px;
+    margin-top: 20px;
+}
+.line-2{
+    margin: 10px 0px 0px 20px;
+    font-size: 18px;
+    color: rgba(0,0,0,0.5);
+}
+.line-3{
+    margin: 60px 0px 0px 20px;
+    font-size: 24px;
+    color: rgba(0,0,0,0.8);
+}
+.line-4{
+    margin: 60px 0px 0px 20px;
+    font-size: 24px;
+    font-style: italic;
+    border-left: 4px solid rgba(0,0,0,0.9);
+    padding-left: 30px;
+    color: rgba(0,0,0,0.8);
+}
+.details{
+    display: none;
+}
+#err{
+    text-align: center;
+    margin-top: 60px;
+    display: none;
+}
